@@ -746,7 +746,7 @@ class LayoutSetup
      */
     public function getBackendUser(): ?BackendUserAuthentication
     {
-        return $GLOBALS['BE_USER'];
+        return $GLOBALS['BE_USER'] ?? null;
     }
 
     /**
